@@ -1,0 +1,312 @@
+$bgcolor: #8ae6cf
+$txtcolor: #2c303d
+body
+	background: #f6f6f6
+	margin: 5% 5%
+	.wrapper
+		color: #ccc
+		overflow: hidden
+		.item
+			position: relative
+			width: 28%
+			margin: 30px 2.65%
+			float: left
+			.name
+				position: relative
+				top: 110%
+				color: #000
+				text-align: center
+				font-weight: bold
+				font: 12px "Oswald"
+				height: 40px
+				padding-top: 25px
+				margin-bottom: -50px
+				text-transform: uppercase
+				letter-spacing: 1px
+				text-shadow: 0 0 1px 
+
+			.info
+				width: 100%
+				position: absolute
+				top: 50%
+				text-align: center
+				transform: translateY(-50%)
+				border: none
+				button
+					border: none
+					background: $bgcolor
+					color: $txtcolor
+					font: 18px "Open Sans", sans-serif
+					text-transform: uppercase
+					font-weight: bold
+					padding: 3px 8px
+					display: none
+					margin: 0 auto
+			.price
+				position: absolute
+				bottom: 10%
+				right: 0px
+				padding: 5px 2px
+				background: $bgcolor
+				color: $txtcolor
+				font-weight: bold
+				letter-spacing: 1px
+				span.oldprice
+					padding-right: 10px
+					text-decoration: line-through
+				span:before
+					content: "$"
+					margin-right: 0px
+				span:nth-child(2)
+					color: #ce2c52
+				
+			.picture
+				//position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				img
+					display: inline-block
+					width: 100%
+					height: auto
+		.details
+			height: 70%
+			width: 80%
+			left: 10%
+			top: 15%
+			background: #f00
+			background-color: #eaf2f4
+			min-width: 740px
+			display: none
+			min-height: 500px
+			position: fixed
+			.pic_col,.info_col
+				width: 50%
+				height: 100%
+				position: relative
+			.pic_col
+				float: left
+				.pic
+					width: 100%
+					height: 85%
+					overflow: hidden
+					background: url(../img/item1.jpg)
+					background-size: 100%
+					background-repeat: no-repeat
+					img
+						display: block
+						height: 100%
+						margin: 0 auto
+						padding-top: 20px
+						width: auto
+						display: none
+
+				.social
+					position: absolute
+					top: 20px
+					left: 10px
+					background: #eaf2f4
+					.show_sl
+						color: #2c87ce
+						background: none
+						border: none
+						font-size: 30px
+						width: 42px
+						height: 47px
+						
+					.social_links
+						display: block
+						margin: 0
+						padding: 0
+						display: none
+						li
+							display: block
+							margin: 0
+							padding: 0
+							background: url(../img/social.png)
+							background-repeat: no-repeat
+							width: 42px
+							height: 42px
+							cursor: pointer
+							margin-bottom: 5px
+						.twitter
+							background-position: 0 -51px
+						.pin
+							background-position: 0 -102px
+						.youtube
+							background-position: 0 -153px
+						.instagram
+							background-position: 0 -204px
+							a
+								display: block
+								height: 100%
+								width: 100%
+			.info_col
+				float: right
+				position: relative
+				padding-right: 50px
+				padding-left: 30px
+				box-sizing: border-box
+				.close
+					position: absolute
+					right: 10px
+					background: url(../img/close1.png)
+					height: 50px
+					width: 50px
+					background-size: 100%
+					margin-top: 10px
+				h1
+					font: 18px "Oswald"
+					color: #2c303d
+					text-transform: uppercase
+					text-align: left
+					font-weight: bold
+				.code
+					font-size: 10px
+					color: #2c303d
+					text-align: left
+					display: block
+					width: 100%
+				.price
+					padding: 15px 0
+					color: $txtcolor
+					font-weight: bold
+					letter-spacing: 1px
+					font-size: 18px 
+					span.oldprice
+						padding-right: 10px
+						text-decoration: line-through
+					span:before
+						content: "$"
+						margin-right: 0px
+					span:nth-child(2)
+						color: #ce2c52
+				.rating
+					display: block
+					margin: 0
+					padding: 0
+					overflow: hidden
+
+					li
+						display: block
+						float: left
+						background: url(../img/stars.png)
+						width: 17px
+						height: 17px
+						background-position: 0 17px
+				.descript
+					h3
+						margin-bottom: -5px
+						color: $txtcolor
+						display: none
+					p
+						clear: both
+						margin-top: 15px
+						color: $txtcolor
+						font: 14px "Open Sans"
+						max-height: 136px
+						overflow: hidden
+				.size
+					display: block
+					margin: 0
+					padding: 0
+					margin-left: 55px
+					position: absolute
+					bottom: 100px
+					&:before
+						content: "Size:"
+						float: left
+						height: 30px
+						display: block
+						margin-left: -55px
+						width: 40px
+						line-height: 40px
+						color: #2c303d
+						text-transform: uppercase
+						font-size: 16px
+						font-weight: bold
+					li
+						display: block
+						float: left
+						border: 2px solid #2c303d
+						width: 30px
+						height: 30px
+						padding: 5px
+						text-align: center
+						border-radius: 50%
+						margin-right: 15px
+						line-height: 30px
+						color: #2c303d
+						cursor: pointer
+						&:hover, &.size_clicked
+							background: #2c303d
+							color: #fff
+				button.submit
+					clear: both
+					height: 50px
+					width: 200px
+					margin: 0 auto
+					display: block 
+					position: absolute
+					bottom: 30px
+					border: none
+					border-radius: 25px
+					background: #8ae6cf
+					color: #2c303d
+					font-weight: bold
+					text-transform: uppercase
+					font-size: 15px
+@media only screen and (max-width: 959px)
+	.main_box
+		.wrapper
+			.item
+				width: 44%
+				margin-bottom: 52px
+				.info
+					display: block
+					top: 100%
+					button
+						border: none
+						background: rgba(0, 0, 0, 0.51)
+						color: $bgcolor
+						font: 18px "Open Sans", sans-serif
+						text-transform: uppercase
+						font-weight: bold
+						padding: 3px 8px
+						display: none
+						margin: 0 auto
+						width: 100%
+						display: block
+						margin-top: -28px
+						height: 40px
+				.name
+					position: static
+					top: 110%
+					color: #000
+					text-align: center
+					font-weight: bold
+					font: 16px "Oswald"
+					height: 40px
+					padding-top: 0px
+					margin-bottom: -50px
+					text-transform: uppercase
+					letter-spacing: 1px
+					text-shadow: 0 0 1px
+				.oldprice
+					display: none
+				.price
+					position: absolute
+					top: 100%
+					right: 0px
+					padding: 5px 2px
+					background: none
+					color: #2c303d
+					font-weight: bold
+					letter-spacing: 1px
+					margin-top: 32px
+					width: 100%
+					text-align: center
+			.details
+				width: 81.4%
+				min-width: 0px
+				top: 70px
